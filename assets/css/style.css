@@ -1,0 +1,138 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+
+.container {
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "filter filter filter"
+          "products products products"
+          "pages pages pages"
+          "footer footer footer";
+      }
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    grid-area: header;
+    justify-content: space-around;
+    background-color: #008cba;
+       /* width: 100%;
+        background-color: #008cba;
+        text-align: center;
+        color: aliceblue;*/
+      }
+.logo img, .burger-icon{
+        max-width:50px;
+    }
+.filter{
+    grid-area: filter;
+    flex-direction: column;
+    background-color: lightgray;
+    
+}
+.options{
+    background-color: aliceblue;
+    margin-bottom: 8px;
+}
+.options p, .options img{
+    margin: 8px;
+}
+.icon{
+    max-width: 22px;
+    margin: 1%;
+}
+.products {
+        background-color: whitesmoke;
+        grid-area: products;
+        margin-top: 1rem;
+      }
+button{
+    background-color: #008cba;
+}
+.product img{
+    width: 90%;
+    height: 90%;
+    object-fit: fill;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+   
+}
+.displayNone {
+    display: none;
+}
+.pages{
+    grid-area: pages;
+}
+.pages p{
+    border: solid 1px black;
+    padding: 2%;
+}
+.footer {
+        background-color: #008cba;
+        grid-area: footer;
+        flex-direction: column;
+        text-align: center;
+      }
+.social{
+    padding: 3%;
+}
+.footer p{
+    margin-top: 0;
+}
+/* @media (min-width: 576px){
+
+    .container {
+        display: grid;
+        grid-template-areas:
+          "header header header header"
+          "side-bar main main main"
+          "side-bar main main main"
+          "footer main main main";
+      }
+    .product {
+        background-color: rgb(211, 223, 234);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+} */
+/*h5{
+    font-size: 15px;
+    margin: 0px;
+}
+
+/* .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #58a5f0;
+} */
+
+/*.header img{
+    height: 15px;
+}
+
+.filter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.options{
+    display: flex;
+    flex-direction: row;
+}
+
